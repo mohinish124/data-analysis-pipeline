@@ -24,7 +24,7 @@ data-analysis-pipeline/
 │
 ├── data/                # Raw input CSV files (see below for required files)
 ├── warehouse/           # Output data warehouse tables (CSV)
-├── Scripts/
+├── scripts/
 │   ├── extract.py
 │   ├── transform.py
 │   ├── load.py
@@ -79,7 +79,7 @@ Please add the following CSV files to the `/data` folder before running the ETL 
 
 **Run the ETL pipeline:**
 ```sh
-python Scripts/main_etl.py
+python scripts/main_etl.py
 ```
 
 **Run data quality tests:**
@@ -89,7 +89,7 @@ python tests/test_etl.py
 
 **Generate business insights:**
 ```sh
-python Scripts/data_insights.py
+python scripts/data_insights.py
 ```
 
 ---
